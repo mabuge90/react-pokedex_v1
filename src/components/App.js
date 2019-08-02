@@ -4,6 +4,7 @@ import DetailView from './DetailView';
 import Pokemon from '../Pokemon';
 import PokeTitle from './PokeTitle';
 
+
 import './styles/App.css';
 
 

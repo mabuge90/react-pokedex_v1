@@ -1,6 +1,7 @@
 import React from 'react';
 import PokeCell from './PokeCell';
 import { pokeClasses } from '../pokeClasses';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 import './styles/PokeList.css';
 
@@ -16,9 +17,9 @@ const PokeList = ({handleOnClick }) => {
       });
 
     return (
-      <section className="poke-list">
+      <Scrollbars className="poke-list" style={{ width: 400, height: 300 }}>
         {cells}
-      </section>
+      </Scrollbars>
     )
   }
   
