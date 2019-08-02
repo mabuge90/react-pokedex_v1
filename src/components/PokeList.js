@@ -5,7 +5,7 @@ import { pokeClasses } from '../pokeClasses';
 import './styles/PokeList.css';
 
 const PokeList = ({handleOnClick }) => {
-    const cells = pokeClasses.map(pokeClass =>{
+    const cells = pokeClasses.map(pokeClass => {
         return (
           <PokeCell 
             key={pokeClass.id} 
@@ -15,13 +15,11 @@ const PokeList = ({handleOnClick }) => {
         );
       });
 
-
     return (
       <section className="poke-list">
         {cells}
       </section>
     )
   }
-  
   
   export default PokeList;
