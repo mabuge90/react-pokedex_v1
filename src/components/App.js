@@ -30,10 +30,15 @@ class App extends Component {
 
     render() {
       return (
-        <div className="App">
-          <PokeTitle/>
-          <PokeList handleOnClick={this.handleOnClick}/>
-          <DetailView pokemon={this.state.pokemon}/>
+        <div> 
+          <div className="title">
+            <img src = "https://www.gfxmag.com/wp-content/uploads/2016/08/pokemon-vector-logo-gotta-catch-em-all-1.png"></img>
+          </div>
+          <div className="App">
+            <PokeTitle/>
+            <PokeList handleOnClick={this.handleOnClick}/>
+            <DetailView pokemon={this.state.pokemon}/>
+          </div>
         </div>
       );
     }
